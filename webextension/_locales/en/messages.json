@@ -33,11 +33,11 @@
   },
 
   "contextMenuItem": {
-    "message": "Check text with LanguageTool",
+    "message": "Check with LanguageTool",
     "description": "Text shown in the context menu, if available."
   },
   "contextMenuItemWithShortcut": {
-    "message": "Check text with LanguageTool [$shortcut$]",
+    "message": "Check with LanguageTool [$shortcut$]",
     "description": "Text shown in the context menu, if available. The parenthesis show the shortcut.",
     "placeholders": {
       "shortcut": {
