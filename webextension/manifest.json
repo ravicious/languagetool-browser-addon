@@ -5,10 +5,12 @@
   "version": "1.0.48",
   "description": "__MSG_appDesc__",
   "default_locale": "en",
-  "icons": { "16": "images/icon16.png",
+  "icons": {
+    "16": "images/icon16.png",
              "48": "images/icon48.png",
              "64": "images/icon64.png",
-             "128": "images/icon128.png" },
+    "128": "images/icon128.png"
+  },
   "author": "Daniel Naber",
   "homepage_url": "https://languagetool.org",
   "offline_enabled": false,
@@ -18,15 +20,21 @@
     "default_title": "__MSG_tooltip__",
     "browser_style": false
   },
-  "permissions": [
-    "activeTab",
-    "storage",
-    "contextMenus"
-  ],
+  "permissions": ["activeTab", "storage", "contextMenus"],
   "background": {
-    "scripts": ["bs/background.js", "share/tools.js", "bs/common.js", "share/markup.js"]
+    "scripts": [
+      "bs/background.js",
+      "share/tools.js",
+      "bs/common.js",
+      "share/markup.js"
+    ]
   },
-  "web_accessible_resources": ["images/*", "**/*.js", "vendors/*", "popup.html"],
+  "web_accessible_resources": [
+    "images/*",
+    "**/*.js",
+    "vendors/*",
+    "popup.html"
+  ],
   "content_scripts": [
     {
       "matches": ["http://*/*", "https://*/*", "file:///*"],
