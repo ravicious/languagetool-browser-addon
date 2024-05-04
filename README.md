@@ -1,7 +1,15 @@
+An old version of LanguageTool browser extension that works with [a local instance of
+LanguageTool](https://dev.languagetool.org/http-server).
 
-This is our old add-on. We recommend using the new one instead (completely rewritten and under a new license):
+## Building the Firefox extension
 
-* Firefox: https://addons.mozilla.org/firefox/addon/languagetool/
-* Chrome: https://chrome.google.com/webstore/detail/languagetool/oldceeleldhonbafppcapldpdifcinji
-* Opera: https://addons.opera.com/extensions/details/grammar-and-spell-checker-languagetool/
-* Edge: https://microsoftedge.microsoft.com/addons/detail/grammar-and-spell-checker/hfjadhjooeceemgojogkhlppanjkbobc
+First, bump the version in `webextension/manifest.json`.
+
+```
+ export WEB_EXT_API_KEY=
+ export WEB_EXT_API_SECRET=
+```
+
+```
+web-ext sign --channel unlisted --source-dir webextension --artifacts-dir dist
+```
